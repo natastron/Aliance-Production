@@ -7,12 +7,37 @@
 .navbar{
   display: flex;
   align-items: center;
-  background-color: antiquewhite;
   color: white;
-height: 94px;
+  height: 94px;
+  position: relative;
+  border-bottom: 1px solid rgba(235, 235, 240, 0.2);
 }
 .logo-link{
   padding: 25px 50px;
+ border-right: 1px solid rgba(235, 235, 240, 0.2);
+ height: 100%;
+}
+.header{
+  min-height: 100vh;
+}
+.header-image{
+  background-image: url(../img/header-bg.png);
+  background-size: contain; /*чтоб изображение заполняло все пространство */
+  background-repeat: no-repeat; /*оно закончилось и повторяется мы пишем не повторяйся */
+   background-size: cover; /*во весь экран */
+  background-position: center; /*чтоб начиналось из центра */
+  position: relative;
+  /* делаем прозрачную плашку для затемнения */
+}
+.header-image::before{
+  content: "";
+   position: absolute; /*позиция плашки абсолютная относительно ее родителя */
+   top: 0;/*плашка прилегает к самому верху экрана  */
+   left: 0; /*отступа сверху и слева нет */
+   background-color: rgba(41, 45, 51, 0.6);
+   width: 100%;
+   height: 100%;
+    z-index: 0; /*будет лежать в самом низу в слоях */
 }
 .header-nav{
   flex-basis: 100%;
