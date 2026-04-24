@@ -1,8 +1,18 @@
 *{
   box-sizing: border-box;
 }
+@font-face {
+    font-family: 'Bebas Neue Regular';
+    src: url('BebasNeueRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
 .body{
   font-family: "Noto Sans", sans-serif;
+}
+.container{
+  max-width: 1140px;
+  margin: auto;
 }
 .navbar{
   display: flex;
@@ -89,4 +99,17 @@ flex-shrink: 0;
   background-color: blue;
   display: flex;
   
+}
+.header-content{
+  padding: 150px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+
+}
+.header-title{
+  max-width: 1080px;
+}
+.header-text{
+  max-width: 720px;
 }
