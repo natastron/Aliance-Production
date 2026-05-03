@@ -167,3 +167,47 @@ text-align: left;
   padding: 0;
   gap: 30px;
 }
+.steps-item{
+  flex:1;
+  min-width: 0;
+}
+.steps-namb{
+  color:  rgba(92, 142, 230, 1);
+font-family: "Bebas Neue";
+font-style: Regular;
+font-size: 48px;
+font-weight: 400;
+line-height: 120%;
+display: flex;
+align-items: center;
+gap: 20px;
+width: 100%;
+}
+.steps-namb:after{
+content: ;
+height: 1px;
+background: red;
+flex: 1;
+}
+.steps-title{
+  color:  rgba(41, 45, 51, 1);
+font-family: "Noto Sans";
+font-style: Regular;
+font-size: 28px;
+font-weight: 400;
+line-height: 160%;
+letter-spacing: 0%;
+text-align: left;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+.steps-text{
+color: rgba(130, 138, 153, 1);
+font-family: "Noto Sans";
+font-style: Regular;
+font-size: 16px;
+font-weight: 400;
+line-height: 160%;
+margin-top: 10px;
+margin-bottom: 10px;
+}
