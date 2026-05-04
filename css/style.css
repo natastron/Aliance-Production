@@ -184,9 +184,9 @@ gap: 20px;
 width: 100%;
 }
 .steps-namb:after{
-content: ;
+content: "";
 height: 1px;
-background: red;
+background: rgba(235, 235, 240, 1);
 flex: 1;
 }
 .steps-title{
