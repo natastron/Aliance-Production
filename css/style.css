@@ -19,8 +19,10 @@
   align-items: center;
   color: white;
   height: 94px;
-  position: relative;
+  position: fixed;
+  z-index: 2;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+  width: 100%;
 }
 .logo-link{
   padding: 25px 50px;
@@ -182,15 +184,18 @@ display: flex;
 align-items: center;
 gap: 20px;
 width: 100%;
+display: flex;
+align-items: center;
 }
 .steps-namb:after{
 content: "";
 height: 1px;
 background: rgba(235, 235, 240, 1);
-flex: 1;
+width: 100%;
+margin-left: 20px;
 }
 .steps-title{
-  color:  rgba(41, 45, 51, 1);
+color:  rgba(41, 45, 51, 1);
 font-family: "Noto Sans";
 font-style: Regular;
 font-size: 28px;
@@ -210,4 +215,24 @@ font-weight: 400;
 line-height: 160%;
 margin-top: 10px;
 margin-bottom: 10px;
+}
+.step-link{
+display: flex;
+align-items: center;
+text-decoration: none;
+color: rgba(92, 142, 230, 1);
+font-family: "Noto Sans";
+font-style: SemiBold;
+font-size: 16px;
+font-weight: 600;
+line-height: 160%;
+letter-spacing: 0%;
+text-align: left;
+}
+.step-link::before{
+  content: "";
+height: 1px;
+background: rgba(92, 142, 230, 1);
+width: 40px;
+margin-right: 20px;
 }
